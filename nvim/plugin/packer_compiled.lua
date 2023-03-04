@@ -85,7 +85,7 @@ _G.packer_plugins = {
     url = "https://github.com/goolord/alpha-nvim"
   },
   ["bufferline.nvim"] = {
-    config = { "\27LJ\2\nõ\1\0\0\6\0\v\0\0176\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\6\0004\4\3\0005\5\a\0>\5\1\4=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\foffsets\1\0\3\rfiletype\rNvimTree\ttext\14File Tree\14separator\2\1\0\3\rtab_size\3\22\20separator_style\nthick\16diagnostics\rnvim_lsp\nsetup\15bufferline\frequire\18termguicolors\bopt\bvim\0" },
+    config = { "\27LJ\2\nõ\1\0\0\6\0\v\0\0176\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\6\0004\4\3\0005\5\a\0>\5\1\4=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\foffsets\1\0\3\14separator\2\rfiletype\rNvimTree\ttext\14File Tree\1\0\3\16diagnostics\rnvim_lsp\rtab_size\3\22\20separator_style\nthick\nsetup\15bufferline\frequire\18termguicolors\bopt\bvim\0" },
     loaded = true,
     path = "/Users/tzuchiao.yeh/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
@@ -116,7 +116,7 @@ _G.packer_plugins = {
     url = "https://github.com/feline-nvim/feline.nvim"
   },
   ["gitsigns.nvim"] = {
-    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    config = { "\27LJ\2\n}\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\28current_line_blame_opts\1\0\1\ndelay\3¬\2\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/Users/tzuchiao.yeh/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
@@ -206,9 +206,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+try_loadstring("\27LJ\2\n}\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\28current_line_blame_opts\1\0\1\ndelay\3¬\2\1\0\1\23current_line_blame\2\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
@@ -216,12 +220,8 @@ try_loadstring("\27LJ\2\n”\1\0\0\4\0\n\0\0176\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\
 time([[Config for which-key.nvim]], false)
 -- Config for: bufferline.nvim
 time([[Config for bufferline.nvim]], true)
-try_loadstring("\27LJ\2\nõ\1\0\0\6\0\v\0\0176\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\6\0004\4\3\0005\5\a\0>\5\1\4=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\foffsets\1\0\3\rfiletype\rNvimTree\ttext\14File Tree\14separator\2\1\0\3\rtab_size\3\22\20separator_style\nthick\16diagnostics\rnvim_lsp\nsetup\15bufferline\frequire\18termguicolors\bopt\bvim\0", "config", "bufferline.nvim")
+try_loadstring("\27LJ\2\nõ\1\0\0\6\0\v\0\0176\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\6\0004\4\3\0005\5\a\0>\5\1\4=\4\b\3=\3\n\2B\0\2\1K\0\1\0\foptions\1\0\0\foffsets\1\0\3\14separator\2\rfiletype\rNvimTree\ttext\14File Tree\1\0\3\16diagnostics\rnvim_lsp\rtab_size\3\22\20separator_style\nthick\nsetup\15bufferline\frequire\18termguicolors\bopt\bvim\0", "config", "bufferline.nvim")
 time([[Config for bufferline.nvim]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
