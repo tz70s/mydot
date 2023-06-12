@@ -3,7 +3,8 @@
 -- Add any additional options here
 
 local opt = vim.opt
-
-opt.shiftwidth = 4 -- Size of an indent
-opt.tabstop = 4 -- Number of spaces tabs count for
+opt.smartindent = true
 opt.relativenumber = false -- Relative line numbers
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2

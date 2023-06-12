@@ -5,7 +5,6 @@ return {
             "bash",
             "c",
             "cpp",
-            "help",
             "html",
             "javascript",
             "json",
@@ -21,6 +20,7 @@ return {
             "rust",
             "sql",
             "cmake",
+            "vim",
         },
     },
 }
