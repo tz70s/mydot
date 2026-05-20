@@ -11,6 +11,7 @@ return {
       keywordStyle = { italic = false },
       statementStyle = { italic = false },
       typeStyle = { italic = false },
+      variablebuiltinStyle = { italic = false },
     },
   },
   {
